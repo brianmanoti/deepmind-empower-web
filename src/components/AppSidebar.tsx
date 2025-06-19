@@ -53,7 +53,7 @@ export function AppSidebar({ onAdminClick }: AppSidebarProps) {
   };
 
   return (
-    <Sidebar className={collapsed ? "w-16" : "w-64"} collapsible>
+    <Sidebar className={collapsed ? "w-16" : "w-64"} collapsible="icon">
       <SidebarHeader className="border-b border-sidebar-border">
         <div className="flex items-center space-x-2 px-2 py-4">
           <div className="w-10 h-10 bg-gradient-to-br from-indigo-900 to-indigo-700 rounded-lg flex items-center justify-center flex-shrink-0">
