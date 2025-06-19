@@ -1,4 +1,6 @@
 
+import { Button } from "@/components/ui/button";
+
 export const Partners = () => {
   const partners = [
     { name: "Safaricom PLC", logo: "📱", description: "Kenya's leading telecom" },
