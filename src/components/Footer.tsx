@@ -72,11 +72,11 @@ export const Footer = () => {
               </div>
               <div className="flex items-center space-x-3 text-gray-300">
                 <Phone className="h-5 w-5 text-amber-400" />
-                <span>+234 (0) 800 123 4567</span>
+                <span>+2547123456789</span>
               </div>
               <div className="flex items-center space-x-3 text-gray-300">
                 <MapPin className="h-5 w-5 text-amber-400" />
-                <span>Lagos, Nigeria</span>
+                <span>Nairobi, Kenya</span>
               </div>
             </div>
 
@@ -123,7 +123,7 @@ export const Footer = () => {
         <div className="border-t border-gray-800 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm">
-              © 2024 Deepmind Concepts. All rights reserved.
+              © 2025 Deepmind Concepts. All rights reserved.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <a href="#" className="text-gray-400 hover:text-amber-400 text-sm transition-colors">

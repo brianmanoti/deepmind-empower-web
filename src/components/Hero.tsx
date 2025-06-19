@@ -35,7 +35,7 @@ export const Hero = () => {
                 Explore Services
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
-              <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-indigo-900 px-8 py-4 text-lg">
+              <Button size="lg" variant="outline" className="border-2 border-white text-blue-500 hover:bg-white hover:text-indigo-900 px-8 py-4 text-lg">
                 <Play className="mr-2 h-5 w-5" />
                 Watch Our Story
               </Button>
