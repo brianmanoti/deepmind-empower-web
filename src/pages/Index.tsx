@@ -7,11 +7,28 @@ import { JobInsights } from "@/components/JobInsights";
 import { Partners } from "@/components/Partners";
 import { Newsletter } from "@/components/Newsletter";
 import { Footer } from "@/components/Footer";
+import { AdminPanel } from "@/components/admin/AdminPanel";
 
 const Index = () => {
+  const [showAdmin, setShowAdmin] = useState(false);
+
+  // Simple admin access check (in production, this would be properly authenticated)
+  const handleAdminAccess = () => {
+    const password = prompt("Enter admin password:");
+    if (password === "admin123") {
+      setShowAdmin(true);
+    } else {
+      alert("Invalid password");
+    }
+  };
+
+  if (showAdmin) {
+    return <AdminPanel onClose={() => setShowAdmin(false)} />;
+  }
+
   return (
     <div className="min-h-screen bg-white">
-      <Header />
+      <Header onAdminClick={handleAdminAccess} />
       <Hero />
       <Services />
       <JobInsights />

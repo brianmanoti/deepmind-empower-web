@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -10,73 +9,95 @@ export const JobInsights = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("All");
 
-  const categories = ["All", "Technology", "Marketing", "Finance", "Healthcare", "Education"];
+  const categories = ["All", "Technology", "Marketing", "Finance", "Healthcare", "Education", "Banking"];
 
   const jobs = [
     {
-      title: "Frontend Developer Intern",
-      company: "TechStart Solutions",
-      location: "Remote",
+      title: "Software Developer Intern",
+      company: "Safaricom PLC",
+      location: "Nairobi, Kenya",
       type: "Internship",
-      salary: "$2,000/month",
+      salary: "KSh 50,000/month",
       category: "Technology",
-      description: "Join our dynamic team to build cutting-edge web applications.",
-      logo: "🚀",
+      description: "Join Kenya's leading telecommunications company to develop innovative mobile solutions and M-Pesa integrations.",
+      logo: "📱",
       featured: true
     },
     {
-      title: "Digital Marketing Assistant",
-      company: "Growth Agency",
-      location: "Lagos, Nigeria",
-      type: "Part-time",
-      salary: "$1,500/month",
-      category: "Marketing",
-      description: "Help drive digital marketing campaigns for emerging brands.",
-      logo: "📈",
-      featured: false
-    },
-    {
-      title: "Junior Data Analyst",
-      company: "DataCorp",
-      location: "Abuja, Nigeria",
+      title: "Digital Marketing Specialist",
+      company: "Equity Bank Kenya",
+      location: "Nairobi, Kenya",
       type: "Full-time",
-      salary: "$3,000/month",
-      category: "Technology",
-      description: "Analyze data trends and create insightful reports.",
-      logo: "📊",
+      salary: "KSh 80,000/month",
+      category: "Marketing",
+      description: "Drive digital marketing campaigns for Kenya's largest bank by customer base.",
+      logo: "🏦",
       featured: true
     },
     {
-      title: "Content Writer",
-      company: "Creative Hub",
-      location: "Remote",
-      type: "Freelance",
-      salary: "$800/month",
-      category: "Marketing",
-      description: "Create engaging content for various digital platforms.",
-      logo: "✍️",
-      featured: false
-    },
-    {
-      title: "Financial Planning Intern",
-      company: "FinanceMax",
-      location: "Port Harcourt, Nigeria",
-      type: "Internship",
-      salary: "$1,200/month",
-      category: "Finance",
-      description: "Learn financial planning and analysis in a supportive environment.",
-      logo: "💰",
-      featured: false
-    },
-    {
-      title: "UI/UX Design Intern",
-      company: "DesignFlow",
-      location: "Remote",
-      type: "Internship",
-      salary: "$1,800/month",
+      title: "Data Analyst",
+      company: "Kenya Airways",
+      location: "Nairobi, Kenya",
+      type: "Full-time",
+      salary: "KSh 75,000/month",
       category: "Technology",
-      description: "Design beautiful and intuitive user experiences.",
+      description: "Analyze flight operations data and customer insights for Kenya's national carrier.",
+      logo: "✈️",
+      featured: false
+    },
+    {
+      title: "Content Creator",
+      company: "Nation Media Group",
+      location: "Nairobi, Kenya",
+      type: "Contract",
+      salary: "KSh 45,000/month",
+      category: "Marketing",
+      description: "Create engaging content for Kenya's leading media house across digital platforms.",
+      logo: "📺",
+      featured: false
+    },
+    {
+      title: "Financial Analyst Trainee",
+      company: "KCB Bank Kenya",
+      location: "Nairobi, Kenya",
+      type: "Graduate Program",
+      salary: "KSh 60,000/month",
+      category: "Finance",
+      description: "Join KCB's graduate program and develop expertise in financial analysis and banking operations.",
+      logo: "💰",
+      featured: true
+    },
+    {
+      title: "UI/UX Designer",
+      company: "iHub Nairobi",
+      location: "Nairobi, Kenya",
+      type: "Full-time",
+      salary: "KSh 85,000/month",
+      category: "Technology",
+      description: "Design innovative user experiences for Kenya's thriving tech startup ecosystem.",
       logo: "🎨",
+      featured: true
+    },
+    {
+      title: "Customer Success Manager",
+      company: "Twiga Foods",
+      location: "Nairobi, Kenya",
+      type: "Full-time",
+      salary: "KSh 70,000/month",
+      category: "Technology",
+      description: "Help scale Kenya's leading B2B food distribution platform serving thousands of vendors.",
+      logo: "🥬",
+      featured: false
+    },
+    {
+      title: "Junior Consultant",
+      company: "Deloitte Kenya",
+      location: "Nairobi, Kenya",
+      type: "Full-time",
+      salary: "KSh 90,000/month",
+      category: "Finance",
+      description: "Provide advisory services to leading Kenyan and multinational companies.",
+      logo: "📊",
       featured: true
     }
   ];
@@ -92,11 +113,14 @@ export const JobInsights = () => {
     <section id="jobs" className="py-20 bg-gradient-to-br from-gray-50 to-indigo-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center space-y-4 mb-16">
+          <div className="inline-flex items-center px-4 py-2 bg-amber-100 rounded-full text-amber-900 text-sm font-medium">
+            🇰🇪 Kenyan Opportunities
+          </div>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
-            Job <span className="text-indigo-900">Insights</span>
+            Job <span className="text-indigo-900">Opportunities</span> in Kenya
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Discover exclusive opportunities from our trusted partner network and take the next step in your career.
+            Discover exclusive opportunities from Kenya's top companies and international organizations operating locally.
           </p>
         </div>
 

@@ -8,11 +8,14 @@ export const Newsletter = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
           <div className="space-y-6">
+            <div className="inline-flex items-center px-4 py-2 bg-amber-400/20 rounded-full text-amber-300 text-sm font-medium">
+              📧 Stay Connected
+            </div>
             <h2 className="text-3xl md:text-4xl font-bold text-white">
-              Stay Updated with Career Insights
+              Stay Updated with Kenyan Career Insights
             </h2>
             <p className="text-xl text-indigo-100 max-w-2xl mx-auto">
-              Get weekly career tips, job opportunities, and exclusive content delivered straight to your inbox.
+              Get weekly career tips, exclusive job opportunities, and industry insights tailored for Kenyan professionals delivered to your inbox.
             </p>
             
             <div className="max-w-md mx-auto">
@@ -26,8 +29,23 @@ export const Newsletter = () => {
                 </Button>
               </div>
               <p className="text-sm text-indigo-200 mt-3">
-                Join 10,000+ professionals already subscribed. Unsubscribe anytime.
+                Join 10,000+ Kenyan professionals already subscribed. Unsubscribe anytime.
               </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12 pt-8 border-t border-indigo-700">
+              <div className="text-center">
+                <div className="text-2xl font-bold text-amber-400">Weekly</div>
+                <div className="text-sm text-indigo-200">Career Tips</div>
+              </div>
+              <div className="text-center">
+                <div className="text-2xl font-bold text-amber-400">Exclusive</div>
+                <div className="text-sm text-indigo-200">Job Opportunities</div>
+              </div>
+              <div className="text-center">
+                <div className="text-2xl font-bold text-amber-400">Local</div>
+                <div className="text-sm text-indigo-200">Industry Insights</div>
+              </div>
             </div>
           </div>
         </div>
